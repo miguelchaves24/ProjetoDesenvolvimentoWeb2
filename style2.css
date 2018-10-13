@@ -1,0 +1,177 @@
+form {
+  /* Apenas para centralizar o form na página */
+  margin: 0 auto;
+  width: 600px;
+  /* Para ver as bordas do formulário */
+  padding: 1em;
+  border: 50px solid #CCC;
+  border-radius: 1em;
+}
+form div + div {
+  margin-top: 1em;
+}
+
+input, textarea {
+  /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+  font: 1em sans-serif;
+
+  /* Para dar o mesmo tamanho a todos os campo de texto */
+  width: 400px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  /* Para harmonizar o look & feel das bordas nos campos de texto*/
+  border: 2px solid #000;
+}
+input:focus, textarea:focus {
+  /* Dar um pouco de destaque nos elementos ativos */
+  border-color: #000;
+}
+textarea {
+  /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+  vertical-align: center;
+
+  /* Para dar espaço suficiente para digitar algum texto */
+  height: 10em;
+
+  /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+  resize: horizontal;
+}
+.button {
+  /* Para posicionar os botões para a mesma posição dos campos de texto */
+  padding-left: 200px; /* mesmo tamanho que os elementos do tipo label */
+}
+button {
+  /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+  margin-left: .20em;
+}
+.vertical-menu {
+  width: 200px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+body, 
+.menu,
+.sub-menu {
+  margin: 0;
+  padding: 0;
+}
+.clearfix:after{
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.menu,
+.sub-menu {
+  list-style: none;
+  background: #000;
+}
+.sub-menu {
+  background: #444;
+}
+.menu a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.menu li {
+  position: relative;
+}
+.menu > li {
+  float: left;
+}
+.menu > li:hover {
+  background: #444;
+}
+.menu li:hover > .sub-menu {
+  display: block;
+}
+
+#divBusca{
+  background-color:rgb(255,255,255);
+  border:solid 2px black;
+  border-radius:10px;
+  width:300px;
+  height:32px;
+  position: absolute;
+  height: 35px;
+
+}
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px; 
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:191px;
+
+}
+*, *:before, *:after{
+  box-sizing: border-box;
+  font: 300 1em/1.5 'Merriweather', serif; color: #242424;
+  padding: 0; margin: 0;
+}
+
+html, body{background: rgb(236, 240, 241);}
+
+.content{
+  width: 850px; 
+  margin: auto;
+  margin-bottom: 350px; /* Same height as footer */
+  padding: 100px 0;
+}
+h1{
+  color: #111;
+  font-size: 3em;
+  font-weight: 900;
+  padding: 0 0 20px 0;
+}
+h2{
+  color: #111;
+  font-size: 2em;
+  font-weight: 900;
+  padding: 0 0 15px 0;
+}
+p{
+  font-size: 1.25em;
+  padding: 0 0 40px 0;
+}
+
+.fixed_footer{
+  width: 100%;
+  height: 350px;
+  background: #111;
+  position: fixed; left: 0; bottom: 0;
+  z-index: -100;
+}
+.fixed_footer p{
+  color: #696969;
+  column-count: 2;
+  column-gap: 50px;
+  font-size: 1em;
+  font-weight: 300;
+}
+h2{
+  color: rgb(255,255,255);
+}
+h1{
+ text-align: center;
+}
